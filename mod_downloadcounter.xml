@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="4.0" client="site" method="upgrade">
+    <name>mod_downloadcounter</name>
+    <version>1.0.0</version>
+    <description>Simple Download Counter Module</description>
+    <files>
+        <filename module="mod_downloadcounter">mod_downloadcounter.php</filename>
+        <filename>helper.php</filename>
+        <folder>tmpl</folder>
+        <folder>js</folder>
+        <folder>php</folder>
+    </files>
+    <config>
+    </config>
+</extension>
