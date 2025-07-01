@@ -25,13 +25,13 @@ To add new download items, edit the `helper.php` file and add entries to the `ge
 $downloads = [
     [
         'id' => 1,
-        'title' => 'دانلود فایل Book',
+        'title' => 'Download the Book',
         'url' => '/downloads/book.pdf'
     ],
     [
         'id' => 2,
-        'title' => 'دانلود فایل Guide', 
-        'url' => '/downloads/guide.pdf'
+        'title' => 'Download the Book2', 
+        'url' => '/downloads/book2.pdf'
     ],
     // Add more items here
 ];
@@ -60,9 +60,10 @@ You can customize the appearance by editing the `tmpl/default.php` template file
 - `php/count_download.php` - Backend script for counting downloads
 - `sql/install.mysql.utf8.sql` - Database installation script
 - `sql/update.mysql.utf8.sql` - Database update script
-1. Install the module via Joomla Extension Manager.
-2. Ensure your files are located in `/downloads/`.
-3. Embed download links in your articles like:
+
+## Manual Usage
+
+If you want to embed download links manually in your articles, you can use:
 
 ```html
 <script src="/modules/mod_downloadcounter/js/counter.js"></script>

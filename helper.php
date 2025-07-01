@@ -15,12 +15,12 @@ class ModDownloadCounterHelper
         $downloads = [
             [
                 'id' => 1,
-                'title' => 'دانلود فایل Book',
+                'title' => 'Download the Book',
                 'url' => '/downloads/book.pdf'
             ],
             [
                 'id' => 2,
-                'title' => 'دانلود فایل book2',
+                'title' => 'Download the book2',
                 'url' => '/downloads/book2.pdf'
             ]
         ];

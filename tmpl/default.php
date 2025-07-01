@@ -10,7 +10,7 @@ $moduleUrl = JUri::root() . 'modules/mod_downloadcounter/';
       <a href="#" class="my-download" data-id="<?php echo $item['id']; ?>" data-url="<?php echo $item['url']; ?>" style="text-decoration: none; color: #0073aa; font-weight: bold;">
         <?php echo $item['title']; ?>
       </a>
-      <span class="download-count" id="count-<?php echo $item['id']; ?>" style="margin-right: 10px; color: #666;">بارگیری...</span>
+      <span class="download-count" id="count-<?php echo $item['id']; ?>" style="margin-right: 10px; color: #666;">Loading...</span>
     </div>
   <?php endforeach; ?>
 </div>

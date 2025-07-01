@@ -18,14 +18,14 @@ if (typeof window.downloadCounterInitialized === 'undefined') {
         .then(data => {
           const countSpan = document.getElementById('count-' + fileId);
           if (countSpan && data.count !== undefined) {
-            countSpan.textContent = `(${data.count} بار دانلود شده)`;
+            countSpan.textContent = `(${data.count} downloads)`;
           }
         })
         .catch(err => {
           console.error('Error loading count:', err);
           const countSpan = document.getElementById('count-' + fileId);
           if (countSpan) {
-            countSpan.textContent = '(خطا در بارگیری)';
+            countSpan.textContent = '(Loading error)';
           }
         });
 
@@ -46,7 +46,7 @@ if (typeof window.downloadCounterInitialized === 'undefined') {
           .then(data => {
             const countSpan = document.getElementById('count-' + fileId);
             if (countSpan && data.count !== undefined) {
-              countSpan.textContent = `(${data.count} بار دانلود شده)`;
+              countSpan.textContent = `(${data.count} downloads)`;
             }
 
             // Start the download
